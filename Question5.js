@@ -55,9 +55,12 @@ function compareStrings(list1, list2) {
 /*======== time complexity O(n) ========*/
 /*======== comment out each block below for testing ========*/
 
-constructSLL('Bilboa');
-constructSLL2('Bilboa');
-console.log(compareStrings(SLL, SLL2), 'should be 0');
+// constructSLL('Bilboa');
+// constructSLL2('Bilboa');
+// console.log(compareStrings(SLL, SLL2), 'should be 0');
+
+// console.dir(SLL, { depth: null });
+// console.dir(SLL2, { depth: null });
 
 // constructSLL('Bilboa');
 // constructSLL2('Bilbob');
@@ -67,9 +70,9 @@ console.log(compareStrings(SLL, SLL2), 'should be 0');
 // constructSLL2('Bilboa');
 // console.log(compareStrings(SLL, SLL2), 'should be -1');
 
-// constructSLL('Bilboa');
-// constructSLL2('Bilbo');
-// console.log(compareStrings(SLL, SLL2), 'should be 1');
+constructSLL('Bilboa');
+constructSLL2('Bilbo');
+console.log(compareStrings(SLL, SLL2), 'should be 1');
 
 // constructSLL('Bilbob');
 // constructSLL2('Bilboa');

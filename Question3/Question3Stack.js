@@ -1,33 +1,12 @@
-class _Node {
-  constructor(data, next) {
-    this.data = data;
-    this.next = next;
-  }
-}
-class Stack {
-  constructor() {
-    this.top = null;
-  }
-  push(data) {
-    //if stack is empty, node will be the top of the stack
-    if (this.top === null) {
-      this.top = new _Node(data, null);
-      return this.top;
-    }
-    //if the stack already has something, create a new node
-    //add data to the new node and have the pointer point to the top
-    const node = new _Node(data, this.top);
-    this.top = node;
-  }
-  pop() {
-    /*in order to remove the top of the stack, 
-          you have to pint the pointer to the next item 
-          and that next item becomes the top of the stack */
-    const node = this.top;
-    this.top = node.next;
-    return node.data;
-  }
-}
+const Stack = require('./Stack');
+
+/*
+3. Given a string, write an algorithm to count the number of words in the string that are palindromes. 
+The output must include a list of the palindromes and the number of palindromes.
+
+- Input: `"Dad gave mom a Tesla as a racecar"`
+- Output: `Dad, mom, racecar, 3 Palindromes`
+*/
 
 function isPalindrome(myString) {
   myString = myString.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
